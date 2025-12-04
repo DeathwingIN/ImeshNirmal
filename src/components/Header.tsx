@@ -8,9 +8,7 @@ const navItems = [
     { name: "Experience", href: "#experience" },
     { name: "Skills", href: "#skills" },
     { name: "Projects", href: "#projects" },
-    { name: "Certifications", href: "#certifications" },
-    { name: "Blog", href: "#blog" },
-    { name: "Resume", href: "/resume" },
+    { name: "Resume", href: "https://drive.google.com/file/d/1pwCgpb6dUrl8rFntEYGNKnLlsNZFMcF8/view?usp=sharing" },
     { name: "Contact", href: "#contact" },
 ];
 
