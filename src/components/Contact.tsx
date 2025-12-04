@@ -43,7 +43,9 @@ export default function Contact() {
                                 </div>
                                 <div>
                                     <p className="text-sm text-gray-500 dark:text-gray-500">Email</p>
-                                    <p className="text-gray-900 dark:text-white font-medium">contact@imeshnirmal.me</p>
+                                    <a href="mailto:imeshnirmal1u@gmail.com" className="text-gray-900 dark:text-white font-medium hover:text-blue-600 transition-colors">
+                                        imeshnirmal1u@gmail.com
+                                    </a>
                                 </div>
                             </div>
 
@@ -53,7 +55,9 @@ export default function Contact() {
                                 </div>
                                 <div>
                                     <p className="text-sm text-gray-500 dark:text-gray-500">Phone</p>
-                                    <p className="text-gray-900 dark:text-white font-medium">+94 7X XXX XXXX</p>
+                                    <a href="tel:+94779096293" className="text-gray-900 dark:text-white font-medium hover:text-blue-600 transition-colors">
+                                        +94 77 909 6293
+                                    </a>
                                 </div>
                             </div>
 
@@ -76,13 +80,22 @@ export default function Contact() {
                         transition={{ duration: 0.6 }}
                         className="glass dark:glass-dark p-8 rounded-3xl"
                     >
-                        <form className="space-y-6">
+                        <form
+                            action="https://formspree.io/f/xpwvlzya"
+                            method="POST"
+                            className="space-y-6"
+                        >
+                            {/* Note: To make this form functional, create a free account at https://formspree.io/ 
+                                and replace 'YOUR_FORMSPREE_ID' with your actual form ID. 
+                                Alternatively, you can use EmailJS or a custom API route. */}
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                                     Name
                                 </label>
                                 <input
                                     type="text"
+                                    name="name"
+                                    required
                                     className="w-full px-4 py-3 rounded-xl bg-white/50 dark:bg-black/50 border border-gray-200 dark:border-gray-700 focus:ring-2 focus:ring-blue-500 outline-none transition-all"
                                     placeholder="John Doe"
                                 />
@@ -93,6 +106,8 @@ export default function Contact() {
                                 </label>
                                 <input
                                     type="email"
+                                    name="email"
+                                    required
                                     className="w-full px-4 py-3 rounded-xl bg-white/50 dark:bg-black/50 border border-gray-200 dark:border-gray-700 focus:ring-2 focus:ring-blue-500 outline-none transition-all"
                                     placeholder="john@example.com"
                                 />
@@ -102,7 +117,9 @@ export default function Contact() {
                                     Message
                                 </label>
                                 <textarea
+                                    name="message"
                                     rows={4}
+                                    required
                                     className="w-full px-4 py-3 rounded-xl bg-white/50 dark:bg-black/50 border border-gray-200 dark:border-gray-700 focus:ring-2 focus:ring-blue-500 outline-none transition-all"
                                     placeholder="Tell me about your project..."
                                 ></textarea>

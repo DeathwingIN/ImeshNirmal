@@ -10,7 +10,7 @@ const projects = [
         description: "Custom financial reporting module for Business Central, demonstrating advanced reporting capabilities.",
         tags: ["AL", "Reporting", "Finance"],
         link: "https://github.com/DeathwingIN/FinaceReportTest",
-        image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", // Placeholder finance image
+        image: "/project-finance.png",
     },
     {
         title: "ProspectApp",
@@ -18,7 +18,7 @@ const projects = [
         description: "A prospect management application for Business Central to streamline sales workflows.",
         tags: ["AL", "CRM", "Sales"],
         link: "https://github.com/DeathwingIN/ProspectApp",
-        image: "https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", // Placeholder sales image
+        image: "/project-prospect.png",
     },
 ];
 

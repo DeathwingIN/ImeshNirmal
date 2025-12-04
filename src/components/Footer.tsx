@@ -5,9 +5,6 @@ export default function Footer() {
                 <p className="text-gray-500 dark:text-gray-500 text-sm">
                     © {new Date().getFullYear()} Imesh Nirmal. All rights reserved.
                 </p>
-                <p className="text-gray-400 dark:text-gray-600 text-xs mt-2">
-                    Built with Next.js, Tailwind CSS & React Three Fiber.
-                </p>
             </div>
         </footer>
     );

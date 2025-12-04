@@ -67,12 +67,18 @@ export default function Hero() {
                         </p>
 
                         <div className="flex gap-4 justify-center md:justify-start">
-                            <button className="px-8 py-4 bg-black dark:bg-white text-white dark:text-black rounded-full font-bold hover:scale-105 transition-transform shadow-lg shadow-blue-500/20">
+                            <a
+                                href="#projects"
+                                className="px-8 py-4 bg-black dark:bg-white text-white dark:text-black rounded-full font-bold hover:scale-105 transition-transform shadow-lg shadow-blue-500/20"
+                            >
                                 View Projects
-                            </button>
-                            <button className="px-8 py-4 border border-gray-200 dark:border-gray-800 rounded-full font-bold hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors backdrop-blur-sm">
+                            </a>
+                            <a
+                                href="#blog"
+                                className="px-8 py-4 border border-gray-200 dark:border-gray-800 rounded-full font-bold hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors backdrop-blur-sm"
+                            >
                                 Read Blog
-                            </button>
+                            </a>
                         </div>
                     </motion.div>
                 </div>
