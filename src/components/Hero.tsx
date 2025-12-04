@@ -104,7 +104,7 @@ export default function Hero() {
                             />
 
                             {/* Floating Badge */}
-                            <motion.div
+                            {/* <motion.div
                                 initial={{ y: 20, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ delay: 1, duration: 0.5 }}
@@ -114,7 +114,7 @@ export default function Hero() {
                                     <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
                                     <span className="font-semibold text-sm text-gray-800 dark:text-white">Open to Work</span>
                                 </div>
-                            </motion.div>
+                            </motion.div> */}
                         </div>
                     </div>
                 </motion.div>

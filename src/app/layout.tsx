@@ -27,6 +27,8 @@ export const metadata: Metadata = {
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SmoothScroll from "@/components/SmoothScroll";
+import CustomCursor from "@/components/CustomCursor";
 
 export default function RootLayout({
   children,
@@ -35,10 +37,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={inter.className} suppressHydrationWarning>
-        <Header />
-        {children}
-        <Footer />
+      <body className={`${inter.className} cursor-none`} suppressHydrationWarning>
+        <SmoothScroll>
+          <CustomCursor />
+          <Header />
+          {children}
+          <Footer />
+        </SmoothScroll>
       </body>
     </html>
   );
