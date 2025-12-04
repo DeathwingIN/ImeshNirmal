@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Box } from "@react-three/drei";
 
-const experiences = [
+export const experiences = [
     {
         id: 1,
         role: "Associate Microsoft Dynamics BC Technical Consultant",

@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { Award, CheckCircle, ArrowUpRight } from "lucide-react";
 
-const certifications = [
+export const certifications = [
     {
         title: "Microsoft Certified: Dynamics 365 Business Central Developer Associate",
         issuer: "Microsoft",

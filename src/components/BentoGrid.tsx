@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { Code, Database, Cloud, Layout, Server, Terminal, GitBranch, Settings, Zap, Layers, FileJson, Workflow } from "lucide-react";
 
-const skills = [
+export const skills = [
     { name: "Business Central", icon: <Layout className="w-8 h-8 text-[#00bcf2]" /> },
     { name: "AL Programming", icon: <Code className="w-8 h-8 text-blue-400" /> },
     { name: "C/AL", icon: <Terminal className="w-8 h-8 text-gray-400" /> },

@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight, Github } from "lucide-react";
 
-const projects = [
+export const projects = [
     {
         title: "FinaceReportTest",
         category: "Financial Reporting",
