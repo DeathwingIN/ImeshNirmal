@@ -70,7 +70,15 @@ export default function Blog() {
                     className="text-center mb-16"
                 >
                     <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-                        Latest Thoughts
+                        <a
+                            href="https://medium.com/@imeshnirmal"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors inline-flex items-center gap-2"
+                        >
+                            Latest Thoughts
+                            <ArrowUpRight className="w-8 h-8 opacity-50" />
+                        </a>
                     </h2>
                     <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
                         Sharing my journey and technical insights on Business Central, Azure, and modern development.
