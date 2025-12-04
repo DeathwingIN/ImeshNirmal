@@ -4,28 +4,48 @@ import { motion } from "framer-motion";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Box } from "@react-three/drei";
 
-// Placeholder data since we couldn't access the old portfolio
 const experiences = [
     {
         id: 1,
-        role: "Senior Technical Consultant",
-        company: "Business Central Partner",
-        date: "2023 - Present",
-        description: "Leading AL development and Azure integrations for enterprise clients.",
+        role: "Associate Microsoft Dynamics BC Technical Consultant",
+        company: "MicroCloud 360",
+        date: "Jan 2025 - Present",
+        description: "Full-time remote role focusing on DevOps, Enterprise Resource Planning (ERP), and AL development.",
     },
     {
         id: 2,
-        role: "BC Developer",
-        company: "Tech Solutions Inc",
-        date: "2021 - 2023",
-        description: "Implemented custom modules and Power Automate workflows.",
+        role: "Trainee Microsoft Dynamics BC Consultant",
+        company: "MicroCloud 360",
+        date: "Oct 2024 - Jan 2025",
+        description: "Internship program learning the fundamentals of Business Central and technical consulting.",
     },
     {
         id: 3,
-        role: "Junior Developer",
-        company: "StartUp Co",
-        date: "2019 - 2021",
-        description: "Full stack development with a focus on Microsoft technologies.",
+        role: "Software Engineer Intern",
+        company: "TX Solutions",
+        date: "Sep 2024 - Mar 2025",
+        description: "Remote internship working with Python, Large Language Models (LLM), and software engineering best practices.",
+    },
+    {
+        id: 4,
+        role: "Freelance Video Editor",
+        company: "Fiverr",
+        date: "Jul 2022 - Sep 2024",
+        description: "Part-time freelance work delivering motion graphics and video editing services while managing client relations.",
+    },
+    {
+        id: 5,
+        role: "Wordpress Developer",
+        company: "Self-employed",
+        date: "Aug 2021 - Apr 2022",
+        description: "Built and hosted websites using WordPress, HTML, and web hosting technologies.",
+    },
+    {
+        id: 6,
+        role: "Quality Assurance Technician",
+        company: "Global System Solutions, Inc (GSS)",
+        date: "Aug 2019 - Jul 2020",
+        description: "Ensured product accuracy and quality inspection standards were met.",
     },
 ];
 
@@ -44,16 +64,16 @@ function TimelineItem({ experience, index }: { experience: any; index: number })
                 <h1 className="mx-auto font-semibold text-lg text-white">{index + 1}</h1>
             </div>
             <div className="order-1 w-5/12 px-6 py-4 rounded-lg shadow-xl glass dark:glass-dark">
-                <h3 className="mb-3 font-bold text-gray-800 dark:text-white text-xl">
+                <h3 className="mb-1 font-bold text-gray-800 dark:text-white text-lg md:text-xl">
                     {experience.role}
                 </h3>
-                <h4 className="mb-3 font-bold text-gray-600 dark:text-gray-300 text-md">
+                <h4 className="mb-2 font-bold text-blue-600 dark:text-blue-400 text-sm md:text-md">
                     {experience.company}
                 </h4>
-                <p className="text-sm leading-snug tracking-wide text-gray-900 dark:text-gray-400 text-opacity-100">
+                <p className="text-sm leading-snug tracking-wide text-gray-700 dark:text-gray-300 text-opacity-100 mb-2">
                     {experience.description}
                 </p>
-                <span className="text-xs text-gray-500 dark:text-gray-500 mt-2 block">
+                <span className="text-xs text-gray-500 dark:text-gray-500 block font-mono">
                     {experience.date}
                 </span>
             </div>
@@ -63,8 +83,8 @@ function TimelineItem({ experience, index }: { experience: any; index: number })
 
 export default function Experience() {
     return (
-        <section className="py-20 bg-gray-50 dark:bg-black relative">
-            <div className="container mx-auto px-4">
+        <section className="py-20 bg-gray-50 dark:bg-black relative overflow-hidden">
+            <div className="container mx-auto px-4 relative z-10">
                 <motion.h2
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -73,7 +93,7 @@ export default function Experience() {
                     Experience
                 </motion.h2>
 
-                <div className="relative wrap overflow-hidden p-10 h-full">
+                <div className="relative wrap overflow-hidden p-4 md:p-10 h-full">
                     <div
                         className="border-2-2 absolute border-opacity-20 border-gray-700 h-full border"
                         style={{ left: "50%" }}
@@ -85,7 +105,7 @@ export default function Experience() {
                 </div>
 
                 {/* 3D Decorative Element */}
-                <div className="h-64 w-full mt-10">
+                <div className="h-64 w-full mt-10 hidden md:block">
                     <Canvas>
                         <ambientLight intensity={0.5} />
                         <directionalLight position={[5, 5, 5]} />
